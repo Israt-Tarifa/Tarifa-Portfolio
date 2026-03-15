@@ -30,10 +30,5 @@ Hi! I am **Tarifa**, a passionate web developer who loves creating **responsive*
 - **Technologies:** HTML, CSS, Bootstrap  
 - **Live Preview:** [View Website](https://yourusername.github.io/your-repo-name)
 
-### 2️⃣ Another Project (Optional)
-- **Description:** Short description of another project.  
-- **Technologies:** HTML, CSS, JS  
-- **Live Preview / Demo:** [Link](#)
-
 ---
 
