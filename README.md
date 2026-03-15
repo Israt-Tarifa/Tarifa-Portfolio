@@ -1,7 +1,7 @@
 # 🌟 Tarifa's Portfolio
 
 [![Website](https://img.shields.io/badge/Portfolio-Website-blue?style=for-the-badge&logo=google-chrome)](https://yourusername.github.io/your-repo-name)  
-[![LinkedIn](https://www.linkedin.com/in/israt-jahan-tarifa-32a8431b5/)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Tarifa-blue?style=for-the-badge&logo=linkedin)]([https://www.linkedin.com/in/yourprofile](https://www.linkedin.com/in/israt-jahan-tarifa-32a8431b5/))  
 [![Email](https://img.shields.io/badge/Email-tarifa.email@example.com-red?style=for-the-badge&logo=gmail)](mailto:tarifa.email@example.com)  
 
 ---
