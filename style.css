@@ -132,7 +132,7 @@ html {
 }
 
 .leftsection h1 span {
-    color:  #2581a5;
+    color:  #e1bf26;
 }
 
 .leftsection p {
@@ -156,9 +156,25 @@ html {
     background: rgba(255, 255, 255, 0.1); /* Light, formal background */
 }
 #element {
-    color:  #2581a5;
+    color:  #e1bf26;
     font-size: 28px;
     font-weight: 500;
+}
+@media (max-width:768px){
+
+.leftsection h1{
+font-size:32px;
+}
+
+.leftsection p{
+font-size:18px;
+}
+
+.rightsection img{
+width:250px;
+height:250px;
+}
+
 }
 
 /* About Section */
@@ -272,63 +288,81 @@ html {
     object-fit: cover;
 }
 
-#skill-bar-wrapper .skills {
-    width: 400px;
-    margin-right: 50px;
-    margin-top: 70px;
+/* Programming Language Skill Section */
+
+#skill-bar-wrapper{
+width:80%;
+margin:auto;
+padding:20px;
 }
 
-#skill-bar-wrapper .skill-name {
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
-    text-transform: uppercase;
-    margin: 20px 0;
-    font-family: "Ubuntu", sans-serif;
+.skill{
+margin-bottom:25px;
 }
 
-#skill-bar-wrapper .skill-bar {
-    height: 10px;
-    background: white;
-    border-radius: 3px;
+.skill-name{
+font-size:18px;
+color:#fff;
+margin-bottom:6px;
 }
 
-#skill-bar-wrapper .skill-per {
-    height: 10px;
-    background-color: rgb(51, 166, 162);
-    color: red;
-    border-radius: 3px;
-    position: relative;
-    animation: fillBars 2.5s 1;
+.skill-bar{
+height:12px;
+background:#222;
+border-radius:20px;
+overflow:hidden;
 }
 
-#skill-bar-wrapper .skill-per::before {
-    content: attr(per);
-    position: absolute;
-    padding: 4px 6px;
-    background: #f1f1f1;
-    border-radius: 4px;
-    font-size: 12px;
-    top: -35px;
-    right: 0;
-    transform: translateX(50%);
+.skill-per{
+height:12px;
+background:#2581a5;
+border-radius:20px;
+position:relative;
 }
 
-#skill-bar-wrapper .skill-per::after {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: #f1f1f1;
-    top: -20px;
-    right: 0;
-    transform: translateX(50%) rotate(45deg);
-    border-radius: 2px;
+.skill-per::before{
+content:attr(per);
+position:absolute;
+top:-30px;
+right:0;
+background:#2581a5;
+color:#fff;
+padding:4px 8px;
+font-size:12px;
+border-radius:5px;
 }
 
-@keyframes fillBars {
-    from { width: 0; }
-    to { width: 100%; }
+.skill-per::after{
+content:"";
+position:absolute;
+top:-12px;
+right:0;
+border:6px solid transparent;
+border-top-color:#2581a5;
+}
+.skill-per{
+animation: fillbar 2s ease;
+}
+
+@keyframes fillbar{
+from{
+width:0;
+}
+}
+@media (max-width:768px){
+
+#about{
+padding:40px 5%;
+}
+
+.about-content h3{
+font-size:24px;
+}
+
+.about-content p{
+font-size:15px;
+}
+
 }
 
 /* Experience Section */
@@ -377,92 +411,71 @@ html {
 
 /* Projects Section */
 /* Projects Section */
-#project {
-    padding: 80px 10%;
-    background: linear-gradient(135deg, #000000, #1a1a1a); /* Match body gradient */
+/* Projects Section Styling */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
 }
 
-.cards {
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    gap: 25px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.project-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Space between paragraph and card */
-}
-
-.project-content p {
-    font-size: 16px;
-    line-height: 26px;
-    color: #ddd;
-    margin: 0; /* Remove default margin */
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.08);
+.project-card {
+    background: #fff;
     border-radius: 15px;
     overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow-black-100);
-    border: 2px solid transparent;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border: 1px solid #eee;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    border-color: var(--main-color);
+.project-card:hover {
+    transform: translateY(-10px);
 }
 
-.card img {
+.project-img img {
     width: 100%;
-    height: 400px;
+    height: 220px;
     object-fit: cover;
 }
 
-.card h2 {
-    font-size: 24px;
-    font-weight: 600;
-    padding: 20px;
-    margin: 0;
-    color: var(--white);
+.project-info {
+    padding: 25px;
 }
 
-.card .content {
-    padding: 20px;
-    font-size: 16px;
-    line-height: 26px;
-    color: #ddd;
+.project-info h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #333;
 }
-.header-social1-icon ul {
+
+.project-info p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project-tags {
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.header-social1-icon ul li {
-    margin: 0 12px;
+.project-tags span {
+    background: #eef5ff;
+    color: #0175f2;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #0175f2;
 }
 
-.header-social1-icon ul li a {
-    color: var(--white);
-    font-size: 22px;
-    width: 45px;
-    height: 45px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.header-social1-icon ul li a:hover {
-    background: var(--main-color);
-    border-color: var(--main-color);
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Services Section */

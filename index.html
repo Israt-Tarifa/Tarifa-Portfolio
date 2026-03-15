@@ -54,98 +54,105 @@
 
    <!-- About Section -->
 <section class="about-area" id="about">
-    <div class="container">
-        <div class="section-title">
+    <section id="about" class="about-section-padding" style="padding: 60px 0;">
+    <div class="container-fluid" style="padding: 0 5%;"> <div class="section-title" style="text-align: center; margin-bottom: 40px;">
             <h4>About</h4>
             <h2>Personal <span>Details</span></h2>
         </div>
+
         <div class="row">
-            <div class="col-lg-6">
-                <div class="about-content">
-                    <h3>I'm <span>Israt Jahan Tarifa</span></h3>
-                    <p>Experienced programmer and web designer with a passion for creating innovative,
-                         user-friendly websites and applications. I am a passionate learner and aspiring 
-                         competitive programmer with a solid grasp of C, C++, and Python. My enthusiasm for 
-                         full-stack web development has led me to build real-world projects, including a personal portfolio and 
-                         a feature-rich e-commerce website. By solving over 800 rated problems in coding contests, I’ve strengthened my understanding of core programming concepts, algorithms, and data structures.</p>
+            <div class="col-12"> <div class="about-content">
+                    <h3 style="font-size: 30px; margin-bottom: 15px;">I'm <span>Israt Jahan Tarifa</span></h3>
+                    
+                    <p style="font-size: 18px; line-height: 1.6; text-align: justify; width: 100%; margin-bottom: 30px;">
+                        I am an <strong>SQA Engineer</strong> and <strong>Web Developer</strong> with a strong foundation in 
+                        competitive programming. I specialize in ensuring software quality through 
+                        <strong>Manual Testing</strong>, <strong>API Testing with Postman</strong>, and 
+                        <strong>Automation Testing using Selenium with Java</strong>. With a solid grasp of 
+                        C, C++, and Python, I have solved over 800 problems in various coding contests, 
+                        strengthening my expertise in algorithms and data structures. My background in 
+                        Full-stack web development, combined with my testing mindset, allows me to build 
+                        robust, bug-free, and user-centric applications from start to finish.
+                    </p>
+
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('language-excellency')">Language Excellency</p>
-                        <p class="tab-links" onclick="opentab('Programming Language')">Programming Language</p>
+                       <p class="tab-links" onclick="opentab('programming-lang')">Programming Language</p>
                     </div>
+
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Digital Marketing</span><br>Fiverr, SEO Clerk</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>SQA Engineering</span><br>Manual Testing, API Testing (Postman), Automation (Selenium/Java)</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, PHP, Bootstrap</li>
+                            <li><span>Tools & Design</span><br>Git/GitHub, VS Code, UI/UX (Figma/Adobe XD)</li>
                         </ul>
                     </div>
+
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>BSc</span><br>CGPA: 3.65<br>Year: 2019-2024</li>
-                            <li><span>HSC</span><br>GPA: 4.92<br>Board: Cumilla<br>Year: 2016-2018</li>
-                            <li><span>SSC</span><br>GPA: 5.00<br>Board: Cumilla<br>Year: 2015-2016</li>
+                            <li><span>BSc in ICE</span><br>CGPA: 3.65 | Year: 2019-2024</li>
+                            <li><span>HSC</span><br>GPA: 4.92 | Board: Cumilla | Year: 2016-2018</li>
+                            <li><span>SSC</span><br>GPA: 5.00 | Board: Cumilla | Year: 2015-2016</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="language-excellency">
-                        <h4>Language Proficiency</h4>
-                        <div class="language-item">
-                            <img src="https://flagcdn.com/w40/gb.png" alt="English Flag">
-                            <p><strong>English:</strong> Fluent (Professional Working Proficiency)</p>
-                        </div>
-                        <div class="language-item">
-                            <img src="https://flagcdn.com/w40/bd.png" alt="Bengali Flag">
-                            <p><strong>Bengali:</strong> Native Speaker</p>
-                        </div>
-                       
-                        <div class="language-item">
-                            <img src="https://flagcdn.com/w40/in.png" alt="Hindi Flag">
-                            <p><strong>Hindi:</strong> Basic</p>
-                        </div>
-                    </div>
-                    <div class="tab-contents" id="Programming Language">
-                        <div class="col-lg-6 col-xl-5 offset-xl-1">
-                            <div id="skill-bar-wrapper">
-                                <div class="skills">
-                                    <div class="skill">
-                                        <div class="skill-name">C++</div>
-                                        <div class="skill-bar">
-                                            <div class="skill-per" per="90%" style="max-width:80%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="skill">
-                                        <div class="skill-name">C</div>
-                                        <div class="skill-bar">
-                                            <div class="skill-per" per="60%" style="max-width:60%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="skill">
-                                        <div class="skill-name">HTML</div>
-                                        <div class="skill-bar">
-                                            <div class="skill-per" per="80%" style="max-width:80%"></div>
-                                        </div>
-                                    </div>
-                                     <div class="skill">
-                                        <div class="skill-name">CSS</div>
-                                        <div class="skill-bar">
-                                            <div class="skill-per" per="70%" style="max-width:60%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="skill">
-                                        <div class="skill-name">PHP</div>
-                                        <div class="skill-bar">
-                                            <div class="skill-per" per="60%" style="max-width:60%"></div>
-                                        </div>
-                                    </div>
 
-                                </div>
-                            </div>
+                    <div class="tab-contents" id="language-excellency">
+                        <h4 style="margin: 15px 0;">Language Proficiency</h4>
+                        <div class="language-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <img src="https://flagcdn.com/w40/gb.png" alt="English Flag" style="margin-right: 15px;">
+                            <p style="margin: 0;"><strong>English:</strong> Fluent (Professional Working Proficiency)</p>
                         </div>
+                        <div class="language-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <img src="https://flagcdn.com/w40/bd.png" alt="Bengali Flag" style="margin-right: 15px;">
+                            <p style="margin: 0;"><strong>Bengali:</strong> Native Speaker</p>
+                        </div>
+                        <div class="language-item" style="display: flex; align-items: center;">
+                            <img src="https://flagcdn.com/w40/in.png" alt="Hindi Flag" style="margin-right: 15px;">
+                            <p style="margin: 0;"><strong>Hindi:</strong> Basic</p>
+                        </div>
+                       </div>
+                  
+                  <div class="tab-contents" id="programming-lang">
+                     <div id="skill-bar-wrapper">
+                     <div class="skills">
+                        <div class="skill">
+                        <div class="skill-name">C</div>
+                        <div class="skill-bar"><div class="skill-per" per="60%" style="width: 60%;"></div></div>
+                        </div>
+                     <div class="skill">
+                     <div class="skill-name">C++</div>
+                     <div class="skill-bar"><div class="skill-per" per="90%" style="width: 90%;"></div></div>
+                     </div>
+                     <div class="skill">
+                   <div class="skill-name">C#</div>
+                   <div class="skill-bar"><div class="skill-per" per="60%" style="width: 60%;"></div></div>
+                  </div>
+                     <div class="skill">
+                     <div class="skill-name">HTML</div>
+                     <div class="skill-bar"><div class="skill-per" per="80%" style="width: 80%;"></div></div>
                     </div>
+                    <div class="skill">
+                   <div class="skill-name">CSS</div>
+                   <div class="skill-bar"><div class="skill-per" per="70%" style="width: 70%;"></div></div>
+                   </div>
+                    <div class="skill">
+                 <div class="skill-name">PHP</div>
+                 <div class="skill-bar"><div class="skill-per" per="60%" style="width: 60%;"></div></div>
+                 </div>
+                    <div class="skill">
+                    <div class="skill-name">Python</div>
+                   <div class="skill-bar"><div class="skill-per" per="75%" style="width: 75%;"></div></div>
+                   </div>
+                   
+                
+                 </div>
+                 </div>
+</div>
+                    </div>
+                    
                 </div>
-            </div>
-            <div class="col-lg-6">
             </div>
         </div>
     </div>
@@ -155,17 +162,40 @@
         <div class="container">
             <div class="section-title">
                 <h4>Experience</h4>
-                <h2>My Work <span>Experience</span></h2>
+                 <h2>My professional <span>Experience</span></h2>
             </div>
             <div class="experience-container">
                 <div class="experience-item">
-                    <img src="cf1.png" alt="Codeforces">
+                    <img src="Business A.png" alt="Business Automation">
                     <div>
-                        <h4>Codeforces → Problem Solver</h4>
-                        <p><em>(May 2020 - Present)</em></p>
-                        <p>Consistently participated in Codeforces contests, sharpening problem-solving skills and deepening understanding of algorithms and data structures.</p>
+                        <h4>Business Automation →Internship On Web Development</h4>
+                        <p><em>(January 2024 - April 2024)</em></p>
+                        <p>Completed an internship focused on full-stack web development. Gained practical experience in HTML, CSS,
+                            JavaScript, PHP, and Laravel, along with MySQL database management and CRUD operations. Used Git for
+                              version control and Postman for API testing. Worked on team projects following SRS documentation to ensure
+                                 organized and efficient development.
+                        </p>
                     </div>
                 </div>
+                <div class="experience-item">
+                    <img src="btcl.png" alt="BTCL">
+                    <div>
+                        <h4>BTCL → Internship as Network Engineer</h4>
+                        <p><em>(November 2024)</em></p>
+                        <p>Gained hands-on experience in networking and telecommunication systems, including LAN/WAN configuration, IP
+                           addressing, routing, and network performance monitoring. Learned about PSTN and VoIP technologies, digital
+                             exchange operations, and optical fiber communication, including cable splicing and OTDR testing. This internship
+                           enhanced my technical skills and provided valuable insights into BTCL’s infrastructure and service management.</p>
+                    </div>
+                </div>   
+            </div>
+
+
+                 <div class="section-title">
+                <h4>Experience</h4>
+                <h2>My Leadership <span>Experience</span></h2>
+                 </div>
+            <div class="experience-container">
                 <div class="experience-item">
                     <img src="db.png" alt="Bondhusova">
                     <div>
@@ -196,30 +226,41 @@
 
     <!-- Projects Section -->
     <!-- Projects Section -->
-<section class="projects-section-padding" id="project">
-    <div class="container">
-        <div class="section-title">
+   <section class="projects-section-padding" id="project">
+     <div class="container">
+         <div class="section-title">
             <h4>My Recent Work</h4>
-            <h2>Projects</h2>
-        </div>
-        <div class="cards">
-            <div class="project-content">
-                <p>I designed and developed a comprehensive e-commerce website using HTML, CSS, JavaScript, and PHP, focusing on both functionality and user experience. The platform features secure user registration and login, a dynamic product catalog that supports category-based browsing, an intuitive
-                     shopping cart with real-time updates, and seamless payment gateway integration for safe and efficient transactions.
-                      Emphasizing responsiveness and ease of use, the website provides a smooth and engaging online shopping experience across 
-                      various devices.</p>
-                      <br>
-                      <br>
-                <article class="card">
-                    <header>
-                        <h2>Ecommerce Project</h2>
-                    </header>
+            <h2>My <span>Projects</span></h2>
+         </div>
+        
+         <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img">
                     <img src="p-2.png" alt="Ecommerce Project">
-                </article>
+                </div>
+                <div class="project-info">
+                    <h3>Full-Stack Ecommerce Website</h3>
+                    <p>A comprehensive platform featuring secure user authentication, dynamic product catalog, real-time shopping cart updates, and seamless payment integration using PHP and MySQL.</p>
+                    <div class="project-tags">
+                        <span>HTML</span> <span>CSS</span> <span>PHP</span> <span>MySQL</span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="project 2.png" alt="API Testing Project"> </div>
+                <div class="project-info">
+                    <h3>Automated API Testing & Security Validation</h3>
+                    <p>Automated API testing suite using <strong>Postman</strong> and <strong>Newman</strong>. Includes dynamic Auth tokens, environment variables, CRUD operations, negative testing, and detailed HTML report generation.</p>
+                    <div class="project-tags">
+                        <span>Postman</span> <span>Newman</span> <span>JavaScript</span> <span>Security</span>
+                    </div>
+                </div>
+            </div>
+         </div>
+       </div>
+    </section>
 
     <!-- Services Section -->
     <section class="services-section-padding" id="services">
@@ -230,26 +271,32 @@
             </div>
             <div class="services-grid">
                 <div class="service-item">
-                    <div class="icon"><i class="fas fa-laptop"></i></div>
-                    <h3>Web Design</h3>
-                    <p>Designed visually appealing, user-friendly website interfaces using Adobe XD, Figma, and Photoshop, focusing on responsive layouts.</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><i class="fas fa-code"></i></div>
-                    <h3>Web Development</h3>
-                    <p>Developed responsive websites using HTML, CSS, JavaScript, and frameworks like React, with backend integration using PHP.</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><i class="fas fa-bullhorn"></i></div>
-                    <h3>Digital Marketing</h3>
-                    <p>Executed campaigns across social media, email, and search engines, skilled in SEO, Google Ads, and analytics.</p>
-                </div>
-                <div class="service-item">
-                    <div class="icon"><i class="fas fa-mobile"></i></div>
-                    <h3>Mobile App Development</h3>
-                    <p>Developed responsive mobile apps using Flutter and React Native, with intuitive UI/UX and API integration.</p>
-                </div>
-            </div>
+                     <div class="icon"><i class="fas fa-bug"></i></div>
+                      <h3>Software Quality Assurance (SQA)</h3>
+                      <p> Perform Manual Testing, API Testing with Postman, and Automation Testing using Selenium with Java. Experienced in writing test cases, executing regression testing, and reporting bugs to ensure high-quality software delivery. </p>
+                    </div>
+                    <div class="service-item">
+                         <div class="icon"><i class="fas fa-network-wired"></i></div>
+                          <h3>API Testing</h3>
+                           <p> Test REST APIs using Postman and Newman including CRUD operations,authentication validation, negative testing, and automated report generation.</p>
+                        </div>
+                    <div class="service-item">
+                         <div class="icon"><i class="fas fa-laptop"></i></div>
+                         <h3>Web Design</h3>
+                         <p>Design modern, responsive, and user-friendly website interfaces using Figma and Adobe XD with a focus on usability and clean UI design.</p>
+                        </div>
+                    <div class="service-item">
+                         <div class="icon"><i class="fas fa-code"></i></div>
+                         <h3>Web Development</h3>
+                         <p>Develop responsive and dynamic websites using HTML, CSS, JavaScript,Bootstrap, and backend technologies like PHP and MySQL.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon"><i class="fas fa-mobile"></i></div>
+                        <h3>Responsive Web Development</h3>
+                        <p>Build mobile-friendly and cross-browser compatible websites ensuring smooth performance on all devices.</p>
+                    </div>
+
+</div>
         </div>
     </section>
 
@@ -332,7 +379,7 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Designer', 'Programmer'],
+            strings: ['SQA Engineer', 'Programmer','Full-Stack Web Developer'],
             typeSpeed: 50,
         });
 
